@@ -81,14 +81,6 @@ extension SidebarNavigationLink where Label == Text {
     
 }
 
-public struct StackNavigationNavigate<Destination: View> {
-    @Environment(\.push) private var push
-
-    public init(destination: Destination) {
-        push(AnyView(destination), nil)
-    }
-}
-
 public struct StackNavigationLink<Label: View, Destination: View>: View {
     
     private var label: Label

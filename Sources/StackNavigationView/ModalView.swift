@@ -7,11 +7,11 @@
 
 import SwiftUI
 
-struct ModalView: Equatable {
+public struct ModalView: Equatable {
     
     var item: Binding<Int?>
     var content: AnyView
     
-    static func == (lhs: ModalView, rhs: ModalView) -> Bool { lhs.item.wrappedValue == rhs.item.wrappedValue }
+    public static func == (lhs: ModalView, rhs: ModalView) -> Bool { lhs.item.wrappedValue == rhs.item.wrappedValue }
     
 }
